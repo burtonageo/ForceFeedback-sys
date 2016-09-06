@@ -8,7 +8,7 @@ homepage = "https://github.com/burtonageo/forcefeedback-sys"
 repository = "https://github.com/dcuddeback/forcefeedback-sys"
 readme = "Readme.md"
 keywords = ["force", "feedback", "forcefeedback", "haptics", "vibration",
-            "osx", "mac" "system", "bindings", "hardware", "gamepad",
+            "osx", "mac", "system", "bindings", "hardware", "gamepad",
             "input", "controller"]
 
 [dependencies]
