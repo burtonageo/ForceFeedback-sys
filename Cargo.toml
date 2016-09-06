@@ -1,6 +1,14 @@
 [package]
 name = "ForceFeedback-sys"
-version = "0.1.0"
+version = "0.0.0"
+description = "FFI bindings for the ForceFeedback library on OSX"
 authors = ["George Burton <burtonageo@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/burtonageo/forcefeedback-sys"
+repository = "https://github.com/dcuddeback/forcefeedback-sys"
+readme = "Readme.md"
+keywords = ["force", "feedback", "forcefeedback", "haptics", "vibration",
+            "osx", "mac" "system", "bindings", "hardware", "gamepad",
+            "input", "controller"]
 
 [dependencies]
