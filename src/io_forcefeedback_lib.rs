@@ -1,5 +1,6 @@
 #[allow(unused_imports)]
 use cf::{CFUUIDGetConstantUUIDWithBytes, CFUUIDRef, HRESULT, IUNKNOWN_C_GUTS};
+use core::ptr;
 use io::io_object_t;
 use libc::c_void;
 use mach::boolean::boolean_t;
@@ -12,16 +13,16 @@ pub const kFFPlugInAPIMinorAndBugRev: UInt32 = 0;
 pub const kFFPlugInAPIStage: UInt32 = finalStage;
 pub const kFFPlugInAPINonRelRev: UInt32 = 0;
 
-pub fn kIOForceFeedbackLibTypeID() -> CFUUIDRef {
+pub unsafe fn kIOForceFeedbackLibTypeID() -> CFUUIDRef {
     CFUUIDGetConstantUUIDWithBytes(ptr::null_mut(),
         0xF4, 0x54, 0x5C, 0xE5, 0xBF, 0x5B, 0x11, 0xD6,
         0xA4, 0xBB, 0x00, 0x03, 0x93, 0x3E, 0x3E, 0x3E)
 }
 
-pub fn kIOForceFeedbackDeviceInterfaceID() -> CFUUIDRef {
+pub unsafe fn kIOForceFeedbackDeviceInterfaceID() -> CFUUIDRef {
     CFUUIDGetConstantUUIDWithBytes(ptr::null_mut(),
         0x1C, 0x7C, 0x58, 0x50, 0xBB, 0x6A, 0x11, 0xD6,
-        0xB7, 0x5F, 0x00, 0x30, 0x65, 0xFB, 0xE6, 0xB0));
+        0xB7, 0x5F, 0x00, 0x30, 0x65, 0xFB, 0xE6, 0xB0)
 }
 
 #[repr(C)]
