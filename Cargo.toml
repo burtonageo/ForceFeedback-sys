@@ -9,6 +9,9 @@ repository = "https://github.com/burtonageo/forcefeedback-sys"
 readme = "Readme.md"
 keywords = ["forcefeedback", "osx", "hardware", "gamepad", "input"]
 
+links = "ForceFeedback"
+build = "build.rs"
+
 [dependencies]
 CoreFoundation-sys = { git = "http://github.com/burtonageo/core-foundation-sys", branch = "iokit_work" }
 IOKit-sys = { git = "http://github.com/burtonageo/iokit-sys", branch = "IOHIDManager" }
