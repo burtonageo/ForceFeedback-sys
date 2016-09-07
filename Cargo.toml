@@ -5,8 +5,13 @@ description = "FFI bindings for the ForceFeedback library on OSX"
 authors = ["George Burton <burtonageo@gmail.com>"]
 license = "MIT"
 homepage = "https://github.com/burtonageo/forcefeedback-sys"
-repository = "https://github.com/dcuddeback/forcefeedback-sys"
+repository = "https://github.com/burtonageo/forcefeedback-sys"
 readme = "Readme.md"
 keywords = ["forcefeedback", "osx", "hardware", "gamepad", "input"]
 
 [dependencies]
+CoreFoundation-sys = { git = "http://github.com/burtonageo/core-foundation-sys", branch = "iokit_work" }
+IOKit-sys = { git = "http://github.com/burtonageo/iokit-sys", branch = "IOHIDManager" }
+libc = "0.2"
+mach = "0.0"
+MacTypes-sys = "1.0"
