@@ -5,7 +5,7 @@ description = "FFI bindings for the ForceFeedback library on OSX"
 authors = ["George Burton <burtonageo@gmail.com>"]
 license = "MIT"
 homepage = "https://github.com/burtonageo/forcefeedback-sys"
-repository = "https://github.com/dcuddeback/forcefeedback-sys"
+repository = "https://github.com/burtonageo/forcefeedback-sys"
 readme = "Readme.md"
 keywords = ["forcefeedback", "osx", "hardware", "gamepad", "input"]
 
