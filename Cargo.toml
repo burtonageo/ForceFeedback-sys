@@ -1,6 +1,6 @@
 [package]
 name = "ForceFeedback-sys"
-version = "0.0.0"
+version = "0.0.1"
 description = "FFI bindings for the ForceFeedback library on OSX"
 authors = ["George Burton <burtonageo@gmail.com>"]
 license = "MIT"
